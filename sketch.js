@@ -31,9 +31,10 @@ class Bounce {
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  ball1 = new Bounce(1, 10);
-  ball2 = new Bounce(5, 20);
-  ball3 = new Bounce(13, 4);
+  let randomNumber = random(1, 50);
+  ball1 = new Bounce(randomNumber, 10);
+  ball2 = new Bounce(5, randomNumber);
+  ball3 = new Bounce(30, 4);
 }
 
 function draw() {
