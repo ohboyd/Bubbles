@@ -1,18 +1,6 @@
-function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
-  ball = new Bounce();
-}
-
-function draw() {
-  background(0);
-  ball.paint();
-  ball.move();
-  ball.redirect();
-}
-
 class Bounce {
-  constructor(){
-    this.x = 100;
+  constructor(startingX){
+    this.x = startingX;
     this.y = 100;
     this.speed = {
       x: 50,
@@ -39,4 +27,24 @@ class Bounce {
     this.x = this.x + this.speed.x;
     this.y = this.y + this.speed.y;
   };
+}
+
+function setup() {
+  createCanvas(window.innerWidth, window.innerHeight);
+  ball1 = new Bounce(1);
+  ball2 = new Bounce(555);
+  ball3 = new Bounce(1000);
+}
+
+function draw() {
+  background(0);
+  ball1.paint();
+  ball1.move();
+  ball1.redirect();
+  ball2.paint();
+  ball2.move();
+  ball2.redirect();
+  ball3.paint();
+  ball3.move();
+  ball3.redirect();
 }
