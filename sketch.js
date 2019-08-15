@@ -1,10 +1,10 @@
 class Bounce {
-  constructor(startingX){
-    this.x = startingX;
+  constructor(xSpeed, ySpeed){
+    this.x = 100;
     this.y = 100;
     this.speed = {
-      x: 50,
-      y: 10
+      x: xSpeed,
+      y: ySpeed
     };
   }
 
@@ -31,9 +31,9 @@ class Bounce {
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  ball1 = new Bounce(1);
-  ball2 = new Bounce(555);
-  ball3 = new Bounce(1000);
+  ball1 = new Bounce(1, 10);
+  ball2 = new Bounce(5, 20);
+  ball3 = new Bounce(13, 4);
 }
 
 function draw() {
