@@ -1,12 +1,13 @@
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
+  ball = new Bounce();
 }
 
 function draw() {
   background(0);
-  // paint();
-  // move();
-  // redirect();
+  ball.paint();
+  ball.move();
+  ball.redirect();
 }
 
 class Bounce {
