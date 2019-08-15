@@ -11,12 +11,16 @@ function setup() {
 
 function draw() {
   background(0);
-  fill(0);
-  stroke(255);
-  ellipse(x, y, 100, 100);
+  paint();
   move();
   redirect();
 }
+
+function paint() {
+  fill(0);
+  stroke(255);
+  ellipse(x, y, 100, 100);
+};
 
 function move() {
   if(x >= width || x < 0) {
