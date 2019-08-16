@@ -5,7 +5,7 @@ function setup() {
 }
 
 function mouseDragged() {
-  let b = new Bounce(mouseX, mouseY)
+  let b = new Ballpit(mouseX, mouseY)
   balls.push(b);
 }
 

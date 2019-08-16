@@ -1,4 +1,4 @@
-class Bounce {
+class Ballpit {
   constructor(xLocation, yLocation){
     this.x = xLocation;
     this.y = yLocation;
