@@ -14,5 +14,6 @@ function draw() {
   for (var i = 0; i < balls.length; i++) {
     balls[i].paint();
     balls[i].move();
+    balls[i].redirect();
   }
 }
